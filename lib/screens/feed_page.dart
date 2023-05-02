@@ -2,11 +2,16 @@ import 'package:coalesce_app/components/constants.dart';
 import 'package:coalesce_app/components/team_card.dart';
 import 'package:flutter/material.dart';
 
-class FeedPage extends StatelessWidget {
+class FeedPage extends StatefulWidget {
   const FeedPage({Key? key}) : super(key: key);
 
   static const String id = "feed_page";
 
+  @override
+  State<FeedPage> createState() => _FeedPageState();
+}
+
+class _FeedPageState extends State<FeedPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
