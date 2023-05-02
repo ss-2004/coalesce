@@ -61,46 +61,26 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: kBGColour,
         activeColor: kHighlightColour,
         inactiveColor: kFGColour,
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             label: "Home",
-            activeIcon: const Icon(Icons.home),
-            icon: IconButton(
-              icon: const Icon(Icons.home_outlined),
-              onPressed: () {
-                Navigator.pushNamed(context, FeedPage.id);
-              },
-            ),
+            activeIcon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
           ),
           BottomNavigationBarItem(
             label: "Search",
-            activeIcon: const Icon(Icons.search_outlined),
-            icon: IconButton(
-              icon: const Icon(Icons.search_outlined),
-              onPressed: () {
-                Navigator.pushNamed(context, SearchPage.id);
-              },
-            ),
+            activeIcon: Icon(Icons.search_outlined),
+            icon: Icon(Icons.search_outlined),
           ),
           BottomNavigationBarItem(
             label: "Teams",
-            activeIcon: const Icon(Icons.people_rounded),
-            icon: IconButton(
-              icon: const Icon(Icons.people_outlined),
-              onPressed: () {
-                Navigator.pushNamed(context, TeamsPage.id);
-              },
-            ),
+            activeIcon: Icon(Icons.people_rounded),
+            icon: Icon(Icons.people_outlined),
           ),
           BottomNavigationBarItem(
             label: "Profile",
-            activeIcon: const Icon(Icons.person_2),
-            icon: IconButton(
-              icon: const Icon(Icons.person_2_outlined),
-              onPressed: () {
-                Navigator.pushNamed(context, ProfilePage.id);
-              },
-            ),
+            activeIcon: Icon(Icons.person_2),
+            icon: Icon(Icons.person_2_outlined),
           ),
         ],
         onTap: navigationTapped,
